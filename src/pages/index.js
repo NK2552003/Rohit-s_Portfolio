@@ -20,7 +20,7 @@ const qualifications = [
       year: "2021-25",
       course: "B.Tech - Information Technology",
       description: "J.C Bose University of Science & Technology, YMCA, Faridabad",
-      percentage:"8.58/100 %"
+      percentage:"8.58/10 CGPA"
     },
   ];
   const certifications = [
