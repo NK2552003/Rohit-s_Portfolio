@@ -303,7 +303,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left">
             <h2 className="text-2xl font-bold text-white mb-2">Rohit Sharma</h2>
-            <p>Full Stack Developer</p>
+            <p>Front End Developer</p>
             <p>Building creative and efficient solutions.</p>
           </div>
 
