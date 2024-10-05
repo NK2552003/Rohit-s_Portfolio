@@ -122,7 +122,7 @@ export default function Home() {
               <div className="blur-blob blob3"></div>
             </div>
           <div className="text-center p-10 text-slate-300 font-Stylish">
-              <h2 className="text-6xl py-2 font-medium text-white">Rohit Kumar</h2>
+              <h2 className="text-6xl py-2 font-medium text-white">Rohit</h2>
               <h3 className="text-2xl">Efficient developer blending DSA & Front-End expertise</h3>
               <p className="text-md py-5 text-slate-400">Let's create impactful solutions that drive success and foster growth together!
               </p>
@@ -302,7 +302,7 @@ export default function Home() {
         {/* Developer Information */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left">
-            <h2 className="text-2xl font-bold text-white mb-2">Rohit Sharma</h2>
+            <h2 className="text-2xl font-bold text-white mb-2">Rohit</h2>
             <p>Front End Developer</p>
             <p>Building creative and efficient solutions.</p>
           </div>
