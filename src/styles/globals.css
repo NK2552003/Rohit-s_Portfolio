@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.animate-rounded {
+  animation: animate 7s ease-in-out infinite;
+}
+@keyframes moveBlob1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(-30px, 40px) scale(1.1);
+  }
+  50% {
+    transform: translate(20px, -20px) scale(1.15);
+  }
+  75% {
+    transform: translate(-10px, 30px) scale(1.2);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes moveBlob2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(40px, -30px) scale(0.9);
+  }
+  50% {
+    transform: translate(-20px, 20px) scale(1.05);
+  }
+  75% {
+    transform: translate(30px, -10px) scale(0.95);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes moveBlob3 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(-20px, -20px) scale(1.2);
+  }
+  50% {
+    transform: translate(20px, 30px) scale(1);
+  }
+  75% {
+    transform: translate(-30px, 20px) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.blur-blob {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(11, 201, 169, 0.5),
+    rgba(255, 165, 0, 0)
+  );
+  filter: blur(40px);
+  animation: moveBlobs 6s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+.blob1 {
+  top: 10%;
+  left: 10%;
+  animation: moveBlob1 10s ease-in-out infinite alternate;
+}
+
+.blob2 {
+  top: 60%;
+  left: 20%;
+  animation: moveBlob2 12s ease-in-out infinite alternate;
+}
+
+.blob3 {
+  top: 30%;
+  left: 70%;
+  animation: moveBlob3 9s ease-in-out infinite alternate;
+}
+
+@media (max-width: 768px) {
+  .blur-background {
+    display: none;
+  }
+}
