@@ -112,7 +112,7 @@ export default function Home() {
             <h1 className="text-4xl text-slate-300 font-bold font-Stylish">Portfolio</h1>
             <ul className="flex items-center z-40">
               <li>    
-                <a href="https://github.com/NK2552003/Rohit-s_Portfolio/blob/main/Rohit%20Resume.pdf" className="bg-gradient-to-r from-emerald-800 to-emerald-700 text-white px-4 py-2 rounded-md ml-6" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="https://github.com/Rohit0701-create/Portfolio/blob/6869039418d2bf0573f5d1104377805ea89cd0b3/Rohit%20Resume.pdf" className="bg-gradient-to-r from-emerald-800 to-emerald-700 text-white px-4 py-2 rounded-md ml-6" target="_blank" rel="noopener noreferrer">Resume</a>
               </li>
             </ul>
             </nav>
