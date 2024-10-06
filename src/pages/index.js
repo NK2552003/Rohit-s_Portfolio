@@ -343,7 +343,7 @@ export default function Home() {
         {/* Footer Bottom */}
         <div className="mt-8 text-center border-t border-gray-700 pt-4">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} Rohit Sharma. All rights reserved.
+            &copy; {new Date().getFullYear()} Rohit. All rights reserved.
           </p>
         </div>
       </div>
